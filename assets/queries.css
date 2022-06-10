@@ -1,0 +1,179 @@
+@media only screen and (max-width: 1040px) {
+
+    /*Navigation*/
+    .nav {
+        font-size: 80%;
+    }
+
+    /*Tabs Overall*/
+    .tabs h1 {
+        font-size: 28px;
+    }
+
+    /*Updates Tab*/
+    .update__content p {
+        font-size: 14px;
+    }
+
+    .update__content h3 {
+        font-size: 18px;
+    }
+
+    /*About Tab*/
+    .tab__about p {
+        font-size: 17px;
+    }
+
+    /*Tutor Tab*/
+    .tutor__image {
+        width: 20vw;
+    }
+
+    .tutor__text {
+        width: 40vw;
+        min-width: 40vw;
+        max-width: 40vw;
+        font-size: 17px;
+    }
+}
+
+@media only screen and (max-width: 900px) {
+
+    /*Projects Tab*/
+    .row {
+        flex-direction: column;
+        margin: 0;
+    }
+
+    .item img {
+        width: 50vw;
+    }
+
+    .item p {
+        width: 48vw;
+    }
+
+    /*Updates Tab*/
+    .update img {
+        width: 12vw;
+        content: url("/assets/img/updatelogomobile.png");
+        margin-right: 10px;
+    }
+
+    /*About Tab*/
+    .closure h3 {
+        font-size: 17px;
+        margin-top: 20px;
+    }
+
+    .closure img {
+        width: 50px;
+        height: 50px;
+    }
+}
+
+@media only screen and (max-width: 736px) {
+
+    /* Navigation */
+    .nav {
+        position: fixed;
+        z-index: 999;
+        height: 100vh;
+        font-size: 110%;
+    }
+
+    .nav img {
+        width: 40vw;
+        margin-left: 80px;
+        margin-right: 80px;
+    }
+
+    .sticky__nav {
+        display: block;
+    }
+
+    /*Tabs Overall*/
+    .tabs {
+        flex: 0 0 100%;
+    }
+
+    .tabs h1 {
+        margin-top: 120px;
+    }
+
+    /*Projects Tab*/
+    .tab__projects {
+        margin-bottom: 120px;
+    }
+
+    .row img {
+        width: 80vw;
+    }
+
+    .row p {
+        width: 78vw;
+    }
+
+    /*Updates Tab*/
+    .update {
+        flex-direction: column;
+        padding: 0 20px 0 20px;
+    }
+
+    .update img {
+        width: 30vw;
+        content: url("/assets/img/updatelogo.png");
+        margin: 10px 0 5px 0;
+    }
+
+    .update__content h3 {
+        text-align: center;
+        margin-top: 10px;
+    }
+
+    /*About Tab*/
+    .tab__about p {
+        width: 70vw;
+    }
+
+    .closure {
+        margin-left: 20vw;
+    }
+
+    /*Tutor Tab*/
+    .tutor__image {
+        width: 30vw;
+    }
+
+    .tutor__text {
+        width: 50vw;
+        min-width: 50vw;
+        max-width: 50vw;
+    }
+
+}
+
+@media only screen and (max-width: 480px) {
+
+    /*Updates Tab*/
+    .update {
+        width: 75vw;
+    }
+
+    .update__content p {
+        font-size: 13px;
+    }
+}
+
+@media only screen and (max-width: 360px) {
+
+    /*Navigation*/
+    .nav img {
+        width: 30vw;
+    }
+
+    /*Tabs Overall*/
+    .tabs h1 {
+        font-size: 23px;
+    }
+}
