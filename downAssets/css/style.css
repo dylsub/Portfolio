@@ -1,0 +1,253 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+html,
+body{
+    border: 2px solid black;
+    text-rendering: optimizeLegibility;
+    background-color: #fff;
+    color: black;
+    font-size: 20px;
+    /* font-family:'Courier New', Courier, monospace; */
+    font-family:'Courier New', Courier, monospace;
+}
+
+.row{
+    max-width: 1140px;
+    margin: 0 auto;
+}
+
+h1 {
+    font-size: 280%;
+    font-weight: 200;
+    color: white;
+}
+
+h2 {
+    text-transform: uppercase;
+    color: #333;
+    font-weight: 600;
+    text-align: center;
+    line-height: 1.5;
+    font-size: 200%;
+}
+
+h3{
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 125%;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+h2:after{
+    display: block;
+    height: 3px;
+    background-color: purple;
+    content: " ";
+    width: 500px;
+    margin: 20px auto 20px auto;
+}
+
+p {
+    font-weight: 550;
+    line-height: 1.75;
+    color: #555;
+}
+
+section {
+    padding-bottom: 60px;
+}
+
+/* ---------------------------------- */
+/* Header */
+/* ---------------------------------- */
+
+header {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.726), rgba(0, 0, 0, 0.692)), url("img/SadBanner.png");
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    margin-bottom: 60px;
+}
+
+.title-h1 {
+    font-size: 50px;
+    padding-top: 200px;
+    padding-bottom: 0;
+    margin-bottom: 0;
+
+}
+
+.author-h1{
+    font-size: 100%;
+    padding-left: 5px;
+    color: rgb(213, 210, 210);
+    margin-bottom: 30px;
+}
+
+.quick-test-nav:link,
+.quick-test-nav:visited
+ {
+    border-radius: 20px;
+    padding: 12px 40px;
+    font-weight: 200;
+    background-color: purple;
+    color: rgb(213, 210, 210);;
+    font-size: 100%;
+    text-decoration: none;
+    transition: background-color 0.1s;
+}
+
+.quick-test-nav:active,
+.quick-test-nav:hover,
+.result:active,
+.result:hover,
+.restart:active,
+.restart:hover {
+    background-color: rgb(100, 6, 100);
+}
+
+/* ---------------------------------- */
+/* section intro */
+/* ---------------------------------- */
+
+.section-intro p{
+    width: 70%;
+    margin-left: 15%;
+    text-align: justify;
+}
+
+/* ---------------------------------- */
+/* section spectrum */
+/* ---------------------------------- */
+
+.section-spectrum{
+    background-color: rgb(243, 243, 243);
+    text-align: center;
+}
+
+.section-spectrum h2 {
+    margin-top: 60px;
+    margin-bottom: 30px;
+}
+
+.section-spectrum img{
+    width: 500px;
+    height: auto;
+    filter: brightness(90%);
+    transition: filter 0.5s;
+}
+
+.section-spectrum img:hover{
+    filter: none;
+}
+
+/* ---------------------------------- */
+/* section instructions */
+/* ---------------------------------- */
+
+.section-instructions {
+    padding-top: 60px;
+    background-color: rgb(243, 243, 243);
+}
+
+.section-instructions p{
+    width: 85%;
+    text-align: center;
+    margin-left: 7.5%;
+}
+
+/* ---------------------------------- */
+/* section test */
+/* ---------------------------------- */
+
+.section-test{
+    background-color: #fff;
+    padding-top: 60px;
+    padding-bottom: 100px;
+}
+
+.section-test h2{
+    margin-bottom: 25px;
+}
+
+.section-test input{
+    float: left;
+    margin-top: 8px;
+    margin-right: 20px;
+    width: 17px;
+    height: 17px;
+}
+
+.section-test p{
+    float:left;
+}
+
+.result, .restart {
+    border-radius: 20px;
+    padding: 12px 30px;
+    font-weight: 200;
+    background-color: purple;
+    color: #fff;
+    font-size: 80%;
+    text-decoration: none;
+    transition: background-color 0.1s;
+    border: none;
+}
+
+.result{
+    margin-left: 0px;
+    margin-top: 50px;
+}
+
+.restart{
+    display: none;
+    margin-left: 0px;
+    margin-top: 50px;
+}
+
+.result-text,
+.spectrum-text{
+    background-color: plum;
+    font-size: 175%;
+    color: #000;
+    display: none;
+}
+
+.result-text{
+    margin-top: 15px;
+}
+
+.spectrum-text{
+    margin-top: 15px
+}
+
+.tab{
+    padding-right: 12px;
+}
+
+.test-title{
+    text-align: left;
+    margin-top: 40px;
+    margin-left: 50px;
+}
+
+.spectrum{
+    display: none;
+    width: 50%;
+    height: auto;
+    margin-left: 25%;
+    margin-bottom: 0;
+}
+
+.result-col{
+    padding-top: 100px;
+}

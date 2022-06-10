@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="apple-touch-icon" sizes="180x180" href="/taskAssets/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/taskAssets/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/taskAssets/favicon/favicon-16x16.png">
+    <link rel="manifest" href="/taskAssets/favicon/site.webmanifest">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=MuseoModerno:wght@100;200;300;400;500&display=swap"
+        rel="stylesheet">
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="taskAssets/css/style.css">
+    <link rel="stylesheet" href="taskAssets/css/queries.css">
+    <link rel="stylesheet" href="taskAssets/outsideCSS/animate.css">
+    <title>Task List</title>
+
+    <script defer src="taskAssets/js/script.js"></script>
+</head>
+
+<body>
+    <div class="notes animate__animated animate__backInDown animate__faster">
+        <textarea class="notes__textbox" placeholder="Enter notes here!"></textarea>
+        <button class="js--backnotes-btn">🔙</button>
+    </div>
+
+    <div class="container">
+        <div class="main main1 animate__animated animate__backInDown animate__faster">
+            <header>
+                <div class="header__title1">
+                    <button class="js--notes-btn">📒</button>
+                    <h1 class="js--title">Welcome!</h1>
+                    <h2 class="js--clock">00:00</h2>
+                </div>
+                <div class="header__create">
+                    <h2>Add a task here</h2>
+                    <button class="js--info-btn header__btn1">🤔</button>
+                    <input class="js--add-text" type="text" placeholder="Please enter a task">
+                    <button class="js--add-btn header__btn2">➕</button>
+                </div>
+            </header>
+            <div class="labels">
+                <h2 class="label__1">Date Made</h2>
+                <h2 class="label__2">Task Description</h2>
+                <h2 class="label__3">Finish or Cancel</h2>
+            </div>
+            <div class="tasks">
+                <div class="task">
+                    <div class="task__date">1/1</div>
+                    <div class="task__description">Do my homework</div>
+                    <div class="task__btns">
+                        <button class="finish__btn">✅</button>
+                        <button class="cancel__btn">❌</button>
+                        <button class="fav__btn">☆</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="main main2 animate__animated animate__backInDown animate__faster hidden">
+            <header>
+                <div class="header__title2">
+                    <div class="stats">
+                        <h3 class="js--stats-completed">Tasks Completed: 3</h3>
+                        <h3>Keep it up! 😊</h3>
+                    </div>
+                    <h1 class="js--title">Past Task History</h1>
+                    <button class="exit__button">🔙</button>
+                </div>
+                <div class="header__delete">
+                    <h2>Recover/Delete</h2>
+                    <input class="js--past-input" type="text" placeholder="Please enter an ID">
+                    <button class="js--recover-btn header__btn1">🦸‍♂️</button>
+                    <button class="js--delete-btn header__btn2">⛔</button>
+                </div>
+            </header>
+            <div class="labels past__labels">
+                <h2 class="label__1">Date Ended</h2>
+                <h2 class="label__2">Task Description</h2>
+                <h2 class="label__3 lbl3">Status</h2>
+                <h2 class="label__4">ID</h2>
+            </div>
+            <div class="tasks tasks2">
+                <div class="task">
+                    <div class="task__date">1/1</div>
+                    <div class="task__description">Do my homework</div>
+                    <div class="task__status">✅</div>
+                    <div class="task__ID">1</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="colors animate__animated animate__fadeInRight animate__faster hidden">
+            <button class="js--color-btn blue"></button>
+            <button class="js--color-btn red"></button>
+            <!-- <button class="js--color-btn cyan"></button> -->
+            <!-- <button class="js--color-btn green"></button> -->
+            <button class="js--color-btn purple"></button>
+            <!-- <button class="js--color-btn pink"></button> -->
+            <button class="js--color-btn grey"></button>
+        </div>
+
+        <div class="clear hidden animate__animated animate__fadeIn animate__faster">
+            <p class="clear__text">Reset <button class="js--clear-btn">💀</button></p>
+        </div>
+    </div>
+
+    <div class="modal hidden2">
+        <h2>Are you sure?</h2>
+        <button class="js--confirm-btn">YES, RESET</button>
+        <button class="js--deny-btn">NO</button>
+    </div>
+    <div class="overlay hidden2"></div>
+</body>
+
+</html>

@@ -1,0 +1,225 @@
+@media only screen and (max-width: 1340px) {
+    body { flex-direction: column-reverse; }
+    .main { 
+        margin-top: 20px; 
+        margin-left: 10px;
+    }
+    .main1 { margin-right: 34px; }
+    .colors { margin-right: 10px; }
+    .js--notes-btn { display: block; }
+    .notes { 
+        margin-top: 20px;
+     }
+    .tasks{ height: 350px; }
+    .task__description{ 
+        font-size: 80%;
+    }
+    .clear {
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 815px) {
+    .header__title1 h1 {
+        width: 350px;
+        margin-left: 25px;
+        margin-right: -25px;
+        margin-top: 15px;
+        margin-bottom: 25px;
+    }
+    .js--clock {
+        margin-top: 15px;
+    }
+    .header__title2 h1 {
+        width: 230px;
+        margin-left: 20px;
+        height: 40px;
+        margin-top: 15px;
+        padding-bottom: 10px;
+        margin-bottom: 25px;
+    }
+    .js--notes-btn { margin-top: 15px; }
+    .exit__button{ margin-left: 100px; }
+    .stats {
+        width: 150px;
+        height: 40px;
+        margin-bottom: 20px;
+        font-size: 80%;
+        margin-top: 15px;
+    }
+    .task__description {
+        width: 350px;
+        font-size: 100%;
+    }
+    .label__1 { margin-left: 37px; }
+    .label__2 { margin-left: 5px; }
+    .label__3 { margin-left: -35px; }
+    .task__btns { margin-left: 0px; }
+    header { 
+        width: 600px; 
+        height: 150px;
+    }
+    header h1 { 
+        font-size: 170%;
+    }
+    header h2 {
+        font-size: 120%;
+    }
+    .labels { width: 600px; }
+    .tasks { 
+        width: 600px; 
+        font-size: 80%;
+        height: 400px;
+    }
+    .label__4 {  margin-left: -35px; }
+    .main2 .label__3 { margin-right: 30px; }
+    .main2 .label__2 { margin-right: -20px; }
+    .exit__button { margin-top: 15px; }
+}
+
+@media only screen and (max-width: 680px) {
+    .container {
+        flex-direction: column;
+        margin-bottom: 20px;
+    }
+    .main1 {
+        margin-right: 0;
+    }
+    header { 
+        width: 350px; 
+        height: 110px;
+    }
+    .labels { width: 350px; }
+    .tasks { 
+        width: 350px; 
+        font-size: 55%;
+    }
+    .task__description { width: 180px; }
+    .js--info-btn{ 
+        margin-left: -15px;
+    }
+    .header__title1 h1 {
+        width: 190px;
+        height: 25px;
+        margin-bottom: 25px;
+    }
+    .header__title1 h2 {
+        font-size: 90%;
+        width: 70px;
+        height: 20px;
+        margin-left: 30px;
+    }
+    .header__title1 button, .header__title2 button {
+        width: 35px;
+        height: 35px;
+        font-size: 100%;
+        margin-right: -15px;
+    }
+    .header__create button, .header__delete button {
+        width: 35px;
+        height: 35px;
+        font-size: 100%;
+    }
+    .header__create input, .header__delete input {
+        height: 30px;
+        margin-top: 1px;
+        width: 150px;
+        font-size: 70%;
+    }
+    .header__create h2 {
+        height: 23px;
+        padding-top: 7px;
+    }
+    .header__delete h2 {
+        margin-right: 5px;
+        height: 23px;
+        padding-top: 7px;
+    }
+    .labels {
+        font-size: 55%;
+    }
+    .label__1 {
+        margin-left: 45px;
+    }
+    .label__2 {
+        margin-left: 12px;
+    }
+    .main1 .label__3 {
+        margin-left: -75px;
+    }
+    .main2 .label__2 {
+        margin-right: -70px;
+        margin-left: 10px;
+    }
+    .main2 .label__1 {
+        margin-left: 40px;
+    }
+    .label__4 {  margin-left: -35px; }
+    .main2 .label__3 { 
+        margin-right: 35px; 
+    }
+    .tasks button {
+        font-size: 120%;
+        width: 20px;
+        height: 20px;
+        padding-left: 5px;
+        margin-right: 4px;
+    }
+    .task__description {
+        width: 120px;
+    }
+    .task__ID {
+        margin-right: 10px;
+        margin-left: 30px;
+    }
+    .task__date {
+        width: 60px;
+    }
+    .task__status {
+        margin-left: 40px;
+    }
+    .tasks {
+        height: 450px;
+    }
+
+    header h1 { font-size: 90%; }
+    header h2 { font-size: 70%; }
+    .header__title2 h1 { 
+        width: 122px; 
+        height: 20px;
+        margin-right: 0px;
+        padding-top: 7px;
+        margin-left: 5px;
+    }
+    .header__title2 {
+        margin-right: 15px;
+    }
+    .stats {
+        width: 100px;
+        height: 20px;
+        margin-bottom: 20px;
+        margin-top: 15px;
+        margin-right: 5px;
+        font-size: 50%;
+    }
+    .exit__button {
+        margin-left: 45px;
+    }
+    .notes {
+        margin-bottom: 20px;
+    }
+    .colors {
+        flex-direction: row;
+        margin: 0 0 10px 0;
+    }
+    .notes button {
+        width: 35px;
+        height: 35px;
+        font-size: 100%;
+    }
+    .notes textarea {
+        font-size: 15px;
+        width: 300px;
+        height: 500px;
+    }
+}

@@ -1,0 +1,505 @@
+body,
+html {
+    /* overflow-x: hidden; */
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    background-color: #fff;
+    font-family: "MuseoModerno";
+    font-weight: 300;
+    /* background: linear-gradient(to bottom right, #2d0ce6, #58dfe4); */
+    background: #4759df;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 0px;
+    margin-top: 7px;
+}
+
+
+h1 {
+    font-weight: 300;
+    border-radius: 10px;
+    padding: 5px;
+}
+
+h2 {
+    font-weight: 300;
+    padding: 5px;
+}
+
+h3 {
+    font-weight: 300;
+}
+
+
+/* HEADER */
+
+button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+button:hover{
+    filter: brightness(0.95);
+}
+
+header {
+    width: 750px;
+    background-color: rgb(245, 241, 241);
+    border: black solid 4px;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.header__title1, .header__title2
+{
+    margin-bottom: -20px;
+    display: flex;
+}
+
+.js--notes-btn{
+    height: 50px;
+    width: 50px;
+    border-radius: 10px;
+    background-color: rgb(239, 247, 128);
+    font-size: 120%;
+    margin-top: 10px;
+    display: none;
+    padding: 0;
+}
+
+.js--backnotes-btn {
+    height: 50px;
+    width: 50px;
+    border-radius: 10px;
+    background-color:rgb(167, 164, 159);
+    font-size: 150%;
+    margin-top: 5px;
+    margin-left: 5px;
+    
+}
+
+.stats h3 {
+    width: 210px;
+    margin-bottom: -5px;
+    margin-top: 0;
+    line-height: 1.5;
+}
+
+.stats {
+    margin-top: 22px;
+    background-color:rgb(231, 227, 227);
+    height: 48px;
+    border: 2px black solid;
+    border-radius: 10px;
+    padding: 5px;
+    margin-left: 0px;
+}
+
+.header__title2 h1 {
+    background-color: rgb(179, 133, 231);
+    margin-left:30px;
+}
+
+.exit__button {
+    border-radius: 10px;
+    width: 50px;
+    height: 50px;
+    font-size: 150%;
+    background-color: rgb(167, 164, 159);
+    margin-top: 10px;
+    margin-left: 150px;
+}
+
+.header__create .header__btn2 {
+    background-color: #6EE08B;
+}
+
+.header__title1 h1 {
+    background-color: #8f9ae9;
+    margin-left: 75px;
+    width: 425px;
+    text-align: center;
+}
+
+.header__title1 h2 {
+    margin-left: 40px;
+    width: 110px;
+    font-size: 23px;
+    height: 30px;
+    line-height: 1.2;
+    text-align: center;
+    vertical-align: center;
+    border: solid black 3px;
+    background-color: rgb(216, 209, 209);
+    border-radius: 10px;
+    box-shadow: #999 2px 2px 5px;
+}
+
+.header__create,
+.header__delete{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.header__create input,
+.header__delete input {
+    margin-right: 5px;
+    width: 240px;
+    height: 43px;
+    border-radius: 10px;
+    font-family: "MuseoModerno"
+}
+
+.header__create input:focus,
+.header__delete input:focus {
+    outline: none;
+}
+
+.header__create h2,
+.header__delete h2 {
+    margin-right: 20px;
+    background-color: #E09094;
+    border-radius: 10px;
+}
+
+.header__create button,
+.js--recover-btn,
+.js--delete-btn
+ {
+    border-radius: 10px;
+    width: 50px;
+    height: 50px;
+    font-size: 150%;
+}
+
+.header__create .header__btn1 {
+    margin-right: 5px;
+    background-color: rgb(167, 164, 159);
+}
+
+.header__delete .header__btn1 {
+    margin-right: 5px;
+    background-color: orange;
+}
+
+.header__delete .header__btn2 {
+    background-color: rgb(236, 83, 83);
+}
+
+.header__create button:focus {
+    outline: none;
+}
+
+/* TASKS */
+
+.tasks {
+    width: 750px;
+    margin-top: 0;
+    display: flex;
+    display: flex;
+    flex-direction: column;
+    overflow-y: scroll;
+    background-color: rgb(245, 241, 241);
+    border: black solid 4px;
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    border-top: none;
+    height: 413px;
+}
+
+.task {
+    display: flex;
+    align-items: center;
+    background-color: rgb(245, 241, 241);
+    position: relative;
+    margin-top: 5px;
+    margin-left: 5px;
+    margin-right: 5px;
+    border: rgb(191, 187, 187) solid 1px;
+    padding: 5px;
+    font-size: 120%;
+}
+
+
+.task__date {
+    margin-right: 15px;
+    margin-left: 5px;
+    text-align: center;
+    font-weight: 500;
+    font-size: 120%;
+    width: 70px;
+    background-color: rgb(231, 227, 227);
+}
+
+.task__description {
+    width: 450px;
+    overflow-wrap: break-word;
+    word-wrap: break-word;
+}
+
+.task__status {
+    margin-left: 50px;
+}
+
+.task__ID {
+  font-size: 80%;
+  margin-left: 40px;
+  text-align: right;
+}
+
+.task__btns {
+    position: absolute;
+    left: 85%;
+    display: flex;
+    margin-left: -15px;
+}
+
+.fav__btn {
+    border: none;
+    padding: 0;
+    font-size: 100%;
+    background-color: rgb(245, 241, 241);
+    filter:grayscale(100%);
+    
+}
+
+.fav__btn:hover {
+    filter:grayscale(80%);
+    background-color: rgb(245, 241, 241);;
+}
+
+.fav__btn:active {
+    background-color: rgb(245, 241, 241);
+}
+
+.fav__btn img {
+    width: 25px;
+    height: auto;
+}
+
+.fav__selected {
+    filter:grayscale(30%);
+}
+
+.fav__filler{
+    width: 25px;
+}
+
+/*LABELS*/
+
+
+.labels {
+    width: 750px;
+    display: flex;
+    line-height: 1;
+    margin-bottom: 0;
+    background-color:rgb(216, 209, 209);
+    border-left: solid black 4px;
+    border-right: solid black 4px;
+    font-size: 12px;
+    align-items: center;
+}
+
+.past__labels {
+    color: #fff;
+    background-color: #444;
+}
+
+.label__1 {
+    text-align: center;
+    flex: 0 0 10%;
+    margin-left: 33px;
+}
+
+.label__2 {
+    flex: 0 0 65%;
+    margin-left: 0px;
+}
+
+.label__3 {
+    flex: 0 0 15%;
+    margin-left: -40px;
+    text-align: center;
+    margin-right: -10px;
+}
+
+.label__4 {
+    flex: 0 0 10%;
+    text-align: left;
+}
+
+/* Sticky notes */
+
+.notes{
+    margin-right: 20px;
+    display: flex;
+}
+
+.main1 {
+    margin-right: 84px;
+}
+
+.notes__textbox{
+    width: 350px;
+    height: 550px;
+    background-color: #e7e579;
+    border-radius: 10px;
+    border-radius: 10px;
+    border: 4px solid black;
+    font-family: "MuseoModerno";
+    padding: 5px;
+    overflow:hidden;
+    font-size: 104%;
+    resize: none;
+}
+
+.notes__textbox:focus{
+    outline: none;
+}
+
+/* Color Pallete */
+
+.colors {
+    display: flex;
+    flex-direction: column;
+    border: 4px black solid;
+    margin-left: -4px;
+    margin-top: -185px;
+}
+
+.js--color-btn {
+    width: 30px;
+    height: 30px;
+    filter: brightness(1);
+    transition: filter 0.1s;
+}
+
+.js--color-btn:focus {
+    outline: none;
+}
+
+.js--color-btn:hover {
+    filter: brightness(0.95);
+}
+
+.red { background-color: rgb(199, 78, 78); }
+.cyan { background-color: rgb(22, 197, 168); }
+.green { background-color: rgb(76, 160, 76); }
+.blue { background-color: #4759df; }
+.purple { background-color: rgb(173, 76, 211); }
+.pink { background-color: rgb(214, 142, 199); }
+.grey { background-color: #888; }
+
+/* RESET BUTTON */
+
+.js--clear-btn {
+    width: 30px;
+    height: 30px;
+    border-radius: 10px;
+    background-color:rgb(142, 122, 122);
+}
+
+.clear {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 50px;
+}
+
+.clear__text {
+    margin-top: 570px;
+}
+
+/* OVERLAY */
+.modal {
+    position: fixed;
+    width: 400px;
+    height: 275px;
+    top: 20%;
+    left: 36%;
+    z-index: 101;
+    background-color: rgb(235, 224, 224); 
+    border: black solid 4px;
+    border-radius: 10px;
+
+    transition: all 0s;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.modal h2 {
+    background-color:rgb(199, 78, 78);
+    width: 300px;
+    border-radius: 10px;
+    text-align: center;
+    font-size: 200%;
+    font-weight: 400;
+}
+
+.js--confirm-btn {
+    background-color:rgb(255, 255, 255);
+    font-weight: 500;
+    margin-top: 10px;
+    width: 200px;
+    font-size: 140%;
+    height: 50px;
+    border-radius: 10px;
+}
+
+.js--deny-btn {
+    font-weight: 500;
+    background-color: rgb(145, 97, 233);
+    margin-top: 30px;
+    width: 100px;
+    font-weight: 300;
+    font-size: 120%;
+    height: 40px;
+    border-radius: 10px;
+}
+
+.overlay{
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    backdrop-filter: blur(4px);
+    background-color: rbga(0,0,0,0.5);
+    z-index: 100;
+
+    transition: all 0s;
+}
+
+/* HIDDEN CLASSES */
+
+.hidden{
+    display: none;
+}
+
+.hidden2{
+    visibility: hidden;
+    opacity: 0;
+}
+
+
+

@@ -1,0 +1,87 @@
+body,
+html {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Quantico";
+    overflow-y: hidden;
+    color: white;
+    
+}
+
+body {
+    background-image: linear-gradient(to bottom right,rgb(4, 72, 199), purple);
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main{
+    width: 70vw;
+    height: 60vh;
+    
+    margin-left: 50px;
+    margin-bottom: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+h1 {
+    margin-top: 50px;;
+    margin-bottom: 50px;
+}
+
+.main__display {
+    font-size: 100px;
+    text-align: center;
+    
+}
+
+.main__buttons {
+    background-image:linear-gradient(to bottom right, rgb(87, 81, 81), rgb(70, 65, 65));
+    width: 450px;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+input {
+    width: 300px;
+    height: 50px;
+    margin-right: 20px;
+    font-size: 50px;
+    font-family: Quantico;
+}
+
+button {
+    border-radius: 100000px;
+    width: 60px;
+    height: 60px;
+}
+
+.UI{
+    height: 100vh;
+    width: 20vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image:linear-gradient(to bottom right, rgb(87, 81, 81), rgb(70, 65, 65))
+}
+
+.UI__footer {
+    top: 90vh;
+    position: absolute;
+
+}
+
+h3 {
+    font-size: 50px;
+    text-align: center;
+    margin-top: -30px;
+}
