@@ -1,0 +1,16 @@
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.fullscreen__calendar {
+    margin-top: 3px;
+    height: 99vh;
+    width: 98vw;
+}
+
+.fullscreen {
+    top: 94vh;
+    left: 96vw;
+}

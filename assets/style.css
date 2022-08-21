@@ -99,6 +99,7 @@ p {
 .nav__works h1 {
     font-weight: 700;
     line-height: 1;
+    color: #0741AD;
 }
 
 .nav__works {
@@ -140,7 +141,7 @@ p {
 }
 
 .social__4:hover {
-    color: #1DA1F2;
+    color: rgb(255,0,0);
 }
 
 /* ************************** */
@@ -278,8 +279,11 @@ p {
 /* ************************** */
 /*About Tab*/
 /* ************************** */
-.about__paragraph b {
+.red__bold {
     color: rgb(221, 105, 101);
+}
+.blue__bold {
+    color:rgb(104, 131, 219);
 }
 
 .tab__about p {
